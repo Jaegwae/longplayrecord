@@ -10,10 +10,10 @@ function App() {
   let [InputText, setInputText] = useState("");
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
-          <Route path='/longplayrecord' element={<Home InputText={InputText} setInputText={setInputText} />} />
-          <Route path='/longplayrecord/result' element={<Result InputText={InputText} setInputText={setInputText}/>} />
+          <Route path='/' element={<Home InputText={InputText} setInputText={setInputText} />} />
+          <Route path='/result' element={<Result InputText={InputText} setInputText={setInputText}/>} />
         </Routes>
 
       </BrowserRouter>
