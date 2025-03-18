@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/longplayrecord' element={<Home InputText={InputText} setInputText={setInputText} />} />
-          <Route path='/result' element={<Result InputText={InputText} setInputText={setInputText}/>} />
+          <Route path='/longplayrecord/result' element={<Result InputText={InputText} setInputText={setInputText}/>} />
         </Routes>
 
       </BrowserRouter>
