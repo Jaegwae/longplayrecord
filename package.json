@@ -24,7 +24,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://jaegwae.github.io/longplayrecord/",
+  "homepage": "https://Jaegwae.github.io/longplayrecord/",
   "eslintConfig": {
     "extends": [
       "react-app",
