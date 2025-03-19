@@ -1,7 +1,9 @@
 import { useState } from "react";
 import styles from "./Home.module.css";
+import { useNavigate } from "react-router-dom";
 
 function Home(props) {
+    let navigate = useNavigate();
     return (
         <div className={styles.Searchdiv}>
             <p>Long Play Record</p>
@@ -12,7 +14,7 @@ function Home(props) {
                     value={props.InputText}
                     onChange={(e) => {props.setInputText(e.target.value);}}
                     />
-                <button>검색</button>
+                <button onClick={ () => { navigate("/result") } }>검색</button>
             </div>
         </div>
     )
